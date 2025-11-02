@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche - Login</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .login-container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 40px;
+            background: #111;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(226, 0, 26, 0.3);
+        }
+        
+        .login-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .login-header h1 {
+            color: #e2001a;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .login-form .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .login-form label {
+            display: block;
+            margin-bottom: 8px;
+            color: #ccc;
+        }
+        
+        .login-form input {
+            width: 100%;
+            padding: 12px;
+            background: #222;
+            border: 1px solid #333;
+            border-radius: 5px;
+            color: white;
+            font-size: 1rem;
+        }
+        
+        .login-form input:focus {
+            outline: none;
+            border-color: #e2001a;
+        }
+        
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background: #e2001a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .login-btn:hover {
+            background: #c00015;
+        }
+        
+        .login-options {
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .login-options a {
+            color: #e2001a;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 0.9rem;
+        }
+        
+        .login-options a:hover {
+            text-decoration: underline;
+        }
+
+        /* Loading overlay styles */
+        #loadingOverlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #e2001a;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar (same as index.html) -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <div class="models-dropdown">
+                <a href="#inventory">Models ▼</a>
+                <div class="dropdown-content">
+                    <a href="page2.html?model=911">911</a>
+                    <a href="page2.html?model=taycan">Taycan</a>
+                    <a href="page2.html?model=cayenne">Cayenne</a>
+                    <a href="page2.html?model=panamera">Panamera</a>
+                    <a href="page2.html?model=718">718</a>
+                    <a href="page2.html?model=macan">Macan</a>
+                </div>
+            </div>
+            <a href="#inquiry">Inquiry</a>
+            <a href="#contact">Contact</a>
+        </div>
+        
+        <a href="#" class="logo">PORSCHE</a>
+        
+        <button class="login-button" onclick="window.location.href='index.html'">Back to Home</button>
+    </nav>
+
+    <div class="login-container">
+        <div class="login-header">
+            <h1>Porsche ID</h1>
+            <p>Login to access your Porsche account</p>
+        </div>
+        
+        <form class="login-form" id="loginForm">
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" id="email" placeholder="your@email.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+            </div>
+            
+            <button type="submit" class="login-btn">Login</button>
+            
+            <div class="login-options">
+                <a href="#">Forgot password?</a>
+                <a href="#">Create account</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay">
+        <div style="text-align:center;">
+            <div class="spinner"></div>
+            <p style="color:white; font-size:1.2rem;">Logging in...</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            
+            // Simple validation
+            if (email && password) {
+                // Show loading overlay
+                document.getElementById('loadingOverlay').style.display = 'flex';
+                
+                // Simulate login process (2 seconds delay)
+                setTimeout(function() {
+                    // Redirect to page2.html after successful login
+                    window.location.href = 'page2.html';
+                }, 2000);
+            } else {
+                alert('Please fill in all fields');
+            }
+        });
+    </script>
+</body>
+</html>

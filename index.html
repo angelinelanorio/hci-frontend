@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Porsche Dealership | Le Mans 2025</title>
+    
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <div class="models-dropdown">
+            <a href="#inventory">Models ▼</a>
+            <div class="dropdown-content">
+                <a href="page2.html?model=911">911</a>
+                <a href="page2.html?model=taycan">Taycan</a>
+                <a href="page2.html?model=cayenne">Cayenne</a>
+                <a href="page2.html?model=panamera">Panamera</a>
+                <a href="page2.html?model=718">718</a>
+                <a href="page2.html?model=macan">Macan</a>
+            </div>
+            </div>
+            <a href="#inquiry">Inquiry</a>
+            <a href="#contact">Contact</a>
+        </div>
+        
+        <a href="#" class="logo">PORSCHE</a>
+        
+        <button class="login-button" onclick="window.location.href='page3.html'">Login</button>
+    </nav>
+
+    <!-- Le Mans Hero Section with Video Background -->
+<section class="le-mans-hero">
+    <!-- Video Background  -->
+    <video autoplay loop muted playsinline class="video-bg">
+        <source src="Le man.mp4" type="video/mp4">
+        <!-- Fallback image if video fails to load -->
+        <img src="https://newsroom.porsche.com/dam/pnr/2023/Motorsports/IMSA-24h-Daytona-2023/Qualifying/Gallery/M23_0286_fine.jpg" alt="Le Mans Fallback">
+    </video>
+
+    <!-- Content  -->
+    <div class="hero-content">  
+        <h1>Finally: <span class="accent">Le Mans</span></h1>
+        <p class="subtitle">Explore the infinite dream</p>
+        
+        <div class="countdown">
+            <div class="countdown-item">
+                <span class="countdown-number" id="days">00</span>
+                <span>Days</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="hours">00</span>
+                <span>Hours</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="minutes">00</span>
+                <span>Minutes</span>
+            </div>
+            <div class="countdown-item">
+                <span class="countdown-number" id="seconds">00</span>
+                <span>Seconds</span>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <!-- Inventory Section -->
+    <section class="inventory-section">
+        <h2 class="section-title">Porsche Models Available</h2>
+        <div class="inventory-grid">
+
+            <!-- 911 -->
+            <div class="porsche-model">
+                <img src="https://media.ed.edmunds-media.com/porsche/911/2025/oem/2025_porsche_911_coupe_gt3-rs_fq_oem_1_1600.jpg" alt="Porsche 911 GT3" class="model-image">
+                <div class="model-info">
+                    <h3 class="model-name">911</h3>
+                    <div class="model-specs">
+                        <span>502 HP</span>
+                        <span>3.2s 0-60</span>
+                        <span>197 mph</span>
+                    </div>
+                    <p class="model-price">From $169,700</p>
+                    <a href="page2.html?model=911" class="cta-button">Inquire Now</a>
+                </div>
+            </div>
+            
+            <!-- Taycan -->
+            <div class="porsche-model">
+                <img src="https://ev-database.org/img/auto/Porsche_Taycan_GTS/Porsche_Taycan_GTS-01@2x.jpg" alt="Porsche Taycan GTS" class="model-image">
+                <div class="model-info">
+                    <h3 class="model-name">Taycan</h3>
+                    <div class="model-specs">
+                        <span>590 HP</span>
+                        <span>3.5s 0-60</span>
+                        <span>155 mph</span>
+                    </div>
+                    <p class="model-price">From $132,750</p>
+                    <a href="page2.html?model=Taycan" class ="cta-button">Inquire Now</a>
+                </div>
+            </div>
+            
+            <!-- Cayenne -->
+            <div class="porsche-model">
+                <img src="https://cdn.motor1.com/images/mgl/MkORWp/0:403:4408:3308/2024-porsche-cayenne-s-review.webp" alt="Porsche Cayenne S" class="model-image">
+                <div class="model-info">
+                    <h3 class="model-name">Cayenne S</h3>
+                    <div class="model-specs">
+                        <span>434 HP</span>
+                        <span>4.7s 0-60</span>
+                        <span>164 mph</span>
+                    </div>
+                    <p class="model-price">From $93,850</p>
+                    <a href="page2.html?model=Cayenne" class="cta-button">Inquire Now</a>
+                </div>
+            </div>
+            
+            <!-- Panamera -->
+            <div class="porsche-model">
+                <img src="https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/porsche_panamera-4-e-hybrid-review-2025-001-front-tracking.jpg" alt="Porsche Panamera" class="model-image">
+                <div class="model-info">
+                    <h3 class="model-name">Panamera</h3>
+                    <div class="model-specs">
+                        <span>348 HP</span>
+                        <span>5.0s 0-60</span>
+                        <span>165 mph</span>
+                    </div>
+                    <p class="model-price">From $106,300</p>
+                    <a href="page2.html?model=Panamera" class="cta-button">Inquire Now</a>
+                </div>
+            </div>
+            
+            <!-- 718 Spyder -->
+            <div class="porsche-model">
+                <img src="https://images-porsche.imgix.net/-/media/2264FC9D65AD411993B60A6029E39E63_7214E3A796EB48DAA36AF995ECD371FF_BX23I3COX0007-718-boxster-s-twitter.jpg?auto=format&fit=crop&w=1200&h=800" alt="Porsche 718 Spyder" class="model-image">
+                <div class="model-info">
+                    <h3 class="model-name">718</h3>
+                    <div class="model-specs">
+                        <span>414 HP</span>
+                        <span>4.2s 0-60</span>
+                        <span>187 mph</span>
+                    </div>
+                    <p class="model-price">From $97,650</p>
+                    <a href="page2.html?model=718" class="cta-button"   >Inquire Now</a>
+                </div>
+            </div>
+
+            <!-- Macan -->
+            <div class="porsche-model">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/2022-porsche-macan-101-1651084695.jpg?crop=0.574xw:0.483xh;0.327xw,0.358xh&resize=2048:*" alt="Porsche Macan" class="model-image">
+                <div class="model-info">
+                    <h3 class="model-name">Macan</h3>
+                    <div class="model-specs">
+                        <span>261 HP</span>
+                        <span>6.0s 0-60</span>
+                        <span>144 mph</span>
+                    </div>
+                    <p class="model-price">From $63,100</p>
+                    <a href="page2.html?model=Macan" class="cta-button">Inquire Now</a>
+                </div>       
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Timer Script -->
+    <script>
+        // Set the date we're counting down to (June 14-15, 2025)
+        const countDownDate = new Date("Jun 21, 2025 13:00:00").getTime();
+        
+        // Update the count down every 1 second
+        const x = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+            
+            // Time calculations
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Display the result
+            document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+            document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+            
+            // If the count down is finished
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("days").innerHTML = "00";
+                document.getElementById("hours").innerHTML = "00";
+                document.getElementById("minutes").innerHTML = "00";
+                document.getElementById("seconds").innerHTML = "00";
+            }
+        }, 1000);
+
+        // Search functionality
+        document.querySelector('.search-button').addEventListener('click', function() {
+            const query = document.querySelector('.search-input').value;
+            alert(`Searching for: ${query}`);
+        });
+        
+        // Login button functionality
+        document.querySelector('.login-button').addEventListener('click', function() {
+            alert('Login functionality would appear here');
+        });
+    </script>
+
+<!-----footer -->
+<footer class="porsche-footer">
+  <div class="footer-container">
+    <div class="footer-grid">
+      <!-- Locations & Contacts -->
+      <div class="footer-section">
+        <h3 class="footer-heading">Locations & Contacts</h3>
+        <p class="footer-text">Visit our dealerships or contact us directly</p>
+        <button class="footer-button" id="toggleContactBtn">Show Locations</button>
+        
+        <div class="contact-content" id="contactContent" style="display:none;">
+          <div class="location">
+            <h4><i class="fas fa-map-marker-alt"></i> Porsche Center Manila</h4>
+            <p><i class="fas fa-phone"></i> +63 2 8812 5151</p>
+            <p><i class="fas fa-envelope"></i> manila@porsche.ph</p>
+            <p><i class="fas fa-clock"></i> Mon-Sat: 9AM-6PM</p>
+            <div class="map-container">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.234126487344!2d121.0463073153201!3d14.583870781899358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c9f1f091f3a9%3A0x8a6c4b7b4b5e5e5e!2sPorsche%20Center%20Manila!5e0!3m2!1sen!2sph!4v1620000000000!5m2!1sen!2sph" 
+                      width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+          
+          <div class="location">
+            <h4><i class="fas fa-map-marker-alt"></i> Porsche Center Manila</h4>
+            <p><i class="fas fa-phone"></i> +63 2 8812 5151</p>
+            <p><i class="fas fa-envelope"></i> manila@porsche.ph</p>
+            <p><i class="fas fa-clock"></i> Mon-Sat: 9AM-6PM</p>
+            
+          </div>
+        </div>
+      </div>
+
+      <script>
+  // Toggle contact information
+  document.getElementById('toggleContactBtn').addEventListener('click', function() {
+    const content = document.getElementById('contactContent');
+    if (content.style.display === 'none') {
+      content.style.display = 'block';
+      this.textContent = 'Hide Locations';
+    } else {
+      content.style.display = 'none';
+      this.textContent = 'Show Locations';
+    }
+  });
+</script>
+      
+      <!-- Social Media -->
+      <div class="footer-section">
+        <h3 class="footer-heading">Social Media</h3>
+        <p class="footer-text">Get in touch with us via social media.</p>
+        <div class="social-icons">
+          <a href="#facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <!-- Company & Support -->
+      <div class="footer-section">
+        <h3 class="footer-heading">Company & Support</h3>
+        <div class="footer-links-grid">
+          <a href="#porsche-na">Porsche Cars Laguna</a>
+          <a href="#recalls">Recall Information</a>
+          <a href="#careers">Career</a>
+          <a href="#partnership">Global Partnership Council</a>
+          <a href="#compliance">Compliance</a>
+          <a href="#sustainability">Sustainability</a>
+        </div>
+        <a href="#newsroom" class="newsroom-link">Newsroom & Press</a>
+      </div>
+    </div>
+    
+    <div class="footer-divider"></div>
+    
+    <!-- Legal Links -->
+    <div class="legal-section">
+      <p>© 2025 Porsche Laguna, Inc. 
+        <a href="#legal">Legal notice</a>, 
+        <a href="#privacy">Privacy notice</a>, 
+        <a href="#laguna">Laguna Privacy</a>, 
+        <a href="https://www.porsche.com/usa/accessibilitystatement/" target="_blank">Accessibility Statement</a>, 
+        NMLS #3164 Open Source Software Notice.
+      </p>
+      <p>
+        <a href="#donotsell">Do Not Sell or Share My Personal Information</a>, 
+        <a href="#whistleblower">Whistleblower System</a>, 
+        <a href="#emergency">Emergency Responders</a>, 
+        <a href="#verification">In-Use Verification Program</a>. 
+        Certification of Compliance.
+      </p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
